@@ -1,0 +1,28 @@
+body {
+    all: unset; /* ← ブラウザのボタンスタイルを全部リセット */
+
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#text {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+@keyframes sway {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(5deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+button:hover {
+  background-color: #45a049;
+  animation: sway 2s infinite ease-in-out;
+}
