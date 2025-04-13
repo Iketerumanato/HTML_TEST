@@ -1,14 +1,7 @@
-const text = document.getElementById("text");
-const button = document.getElementById("colorButton");
+const button = document.getElementById("myButton");
+const message = document.getElementById("message");
 
 button.addEventListener("click", () => {
-  text.style.color = "blue"; // テキストの色を青に変える
+  message.textContent = "ボタンがクリックされました！";
+  message.style.color = "red";  // テキストの色を変える
 });
-
-// button.addEventListener("mouseenter", () => {
-//     button.classList.add("sway");
-//   });
-  
-//   button.addEventListener("mouseleave", () => {
-//     button.classList.remove("sway");
-//   });
